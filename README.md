@@ -4,7 +4,11 @@ gem_mirror is a Ruby application that makes it easy to create your own RubyGems
 mirror without having to stitch together ugly Bash scripts or deal with more
 complex tools such as [Geminabox][geminabox]. Unlike tools such as Geminabox
 and others gem_mirror does mirroring only, it has no authentication and you
-can't upload gems to it.
+can't upload gems to it. I created this project to improve my knowledge of Ruby
+and Ruby infrastructure.
+
+It was forked from the now archived github project which has also moved
+to gitlab [gem-mirror].
 
 ## Differences with Geminabox
 
@@ -78,3 +82,4 @@ specified otherwise. A copy of this license can be found in the file "LICENSE"
 in the root directory of this repository.
 
 [geminabox]: https://github.com/geminabox/geminabox
+[gem-mirror]: https://gitlab.com/yorickpeterse/gem-mirror
