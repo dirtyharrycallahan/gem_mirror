@@ -4,7 +4,7 @@ require_relative "lib/gem_mirror/version"
 
 Gem::Specification.new do |s|
   s.name                  = "gem_mirror"
-  s.version               = GemMirror::Version::STRING
+  s.version               = GemMirror::VERSION
   s.platform              = Gem::Platform::RUBY
   s.required_ruby_version = Gem::Requirement.new(">= 2.5.0")
   s.authors               = ["Yorick Peterse", "Patrick Callahan"]
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   DESCRIPTION
 
   s.email                 = ["pmc@patrickcallahan.com"]
-  s.files                 = Dir["{assets,config,lib}/**/*"] + ["gem_mirror.gemspec"]
+  s.files                 = Dir["{assets,config,lib,template}/**/*"] + ["gem_mirror.gemspec"]
   s.files                += %w[CHANGELOG.md LICENSE.txt README.md]
   s.require_paths         = ["lib"]
   s.bindir                = "exe"
@@ -44,7 +44,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency("confstruct", "~> 1.0", "< 2")
   s.add_runtime_dependency("httpclient", "~> 2.8", "< 3")
-  s.add_runtime_dependency("slop",       "~> 4.9", "< 5")
+  s.add_runtime_dependency("slop",       "= 3.6")
 
   s.add_development_dependency("bundler",             ">= 1.17.3", "< 3.0")
   s.add_development_dependency("rake",                ">= 13.0.0", "< 14")
