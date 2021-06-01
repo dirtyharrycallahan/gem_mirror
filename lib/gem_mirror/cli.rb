@@ -61,7 +61,7 @@ module GemMirror
     # @return [String]
     #
     def self.version_information
-      "gem_mirror v#{VERSION} on #{RUBY_DESCRIPTION}"
+      "gem_mirror v#{GemMirror::VERSION} on #{RUBY_DESCRIPTION}"
     end
   end
 end
