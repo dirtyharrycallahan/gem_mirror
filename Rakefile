@@ -1,7 +1,11 @@
 # frozen_string_literal: true
 
-require "bundler"
-require "bundler/gem_tasks"
+#require "bundler"
+begin
+  require 'bundler/gem_tasks'
+rescue LoadError
+end
+
 require "bundler/gem_helper"
 require "minitest"
 require "rake/clean"
