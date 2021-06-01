@@ -2,7 +2,7 @@
 
 require "bundler"
 begin
-  require 'bundler/gem_tasks'
+  require "bundler/gem_tasks"
 rescue LoadError
 end
 
