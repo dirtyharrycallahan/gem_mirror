@@ -11,8 +11,6 @@ begin
   require "bundler/gem_tasks"
 rescue LoadError => e
   print_exception(e, true)
-rescue Exception => e
-  print_exception(e, false)
 end
 
 require "bundler/gem_helper"
