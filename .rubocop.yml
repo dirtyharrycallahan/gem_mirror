@@ -17,6 +17,9 @@ AllCops:
 Metrics:
   Enabled: false
 
+Security/MarshalLoad:
+  Enabled: false
+  
 Style/PercentLiteralDelimiters:
   Exclude:
     - "*.gemspec"
