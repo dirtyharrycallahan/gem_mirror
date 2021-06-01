@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-#require "bundler"
+require "bundler"
 begin
   require 'bundler/gem_tasks'
 rescue LoadError
