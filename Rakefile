@@ -7,7 +7,6 @@ rescue LoadError
 end
 
 require "bundler/gem_helper"
-require "minitest"
 require "rake/clean"
 require "rake/testtask"
 require "rubocop/rake_task"
