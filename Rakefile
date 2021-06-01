@@ -1,9 +1,18 @@
 # frozen_string_literal: true
 
 require "bundler"
+
+def print_exception(exception, explicit)
+    puts "[#{explicit ? 'EXPLICIT' : 'INEXPLICIT'}] #{exception.class}: #{exception.message}"
+    puts exception.backtrace.join("\n")
+end
+
 begin
   require "bundler/gem_tasks"
-rescue LoadError
+rescue LoadError => e
+  print_exception(e, true)
+rescue Exception => e
+  print_exception(e, false)
 end
 
 require "bundler/gem_helper"
