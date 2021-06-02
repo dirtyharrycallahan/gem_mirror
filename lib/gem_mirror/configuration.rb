@@ -19,9 +19,10 @@ module GemMirror
     #
     def logger
       @logger ||= Logger.new($stdout, level: :debug)
+      @logger.progname = "gem_mirror"
       @logger.formatter = proc do |severity, datetime, progname, msg|
         date_format = datetime.strftime("%Y-%m-%d %H:%M:%S")
-        "date=[#{date_format}] program=#{progname} severity=#{severity.ljust(5)} pid=##{Process.pid} message='#{msg}'\n"
+        "date=[#{date_format}] program=#{progname} severity=#{severity.ljust(5)} pid=#{Process.pid} message='#{msg}'\n"
       end
       @logger
     end
