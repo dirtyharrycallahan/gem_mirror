@@ -51,7 +51,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency("rake-manifest",       "~> 0.2.0")
   s.add_development_dependency("redcarpet",           "~> 3.5.0")
   s.add_development_dependency("rspec",               "~> 3.2")
-  s.add_development_dependency("rubocop",             "= 1.15.0")
+  s.add_development_dependency("rubocop",             "= 1.16.0")
   s.add_development_dependency("rubocop-performance", "= 1.11.3")
   s.add_development_dependency("rubocop-rake",        "= 0.5.1")
   s.add_development_dependency("rubocop-rspec",       "= 2.3.0")

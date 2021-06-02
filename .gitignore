@@ -15,6 +15,7 @@ coverage.data
 
 # bundler
 /.bundle/
+/vendor/
 Gemfile.lock
 Gemfile.local
 
