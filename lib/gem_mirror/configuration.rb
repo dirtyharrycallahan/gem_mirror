@@ -18,13 +18,12 @@ module GemMirror
     # @return [Logger]
     #
     def logger
-      @logger = Logger.new(STDOUT,
-        progname: 'gem_mirror',
-        formatter: proc do |severity, datetime, progname, msg|
-	  date_format = datetime.strftime("%Y%m%dT%H%M%S%z")
-          "[#{date_format}] severity=#{severity} prog=#{progname} pid=#{Process.pid} message=#{msg}\n"
-        end
-      )
+      @logger = Logger.new($stdout,
+                           progname: "gem_mirror",
+                           formatter: proc do |severity, datetime, progname, msg|
+                             d_format = datetime.strftime("%Y%m%dT%H%M%S%z")
+                             "[#{d_format}] severity=#{severity} prog=#{progname} pid=#{Process.pid} message=#{msg}\n"
+                           end)
     end
 
     ##
