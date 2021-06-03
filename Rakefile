@@ -20,7 +20,9 @@ require "rubocop/rake_task"
 
 Bundler::GemHelper.install_tasks name: "gem_mirror"
 
-RuboCop::RakeTask.new
+RuboCop::RakeTask.new do |task|
+  task.requires << "rubocop-performance"
+end
 
 task default: %i[rubocop yard]
 
