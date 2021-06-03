@@ -25,10 +25,6 @@ Gem::Specification.new do |s|
   s.licenses              = ["MIT"]
   s.summary               = %q{A tool for creating and managing a private rubygems mirror.}
 
-  if $PROGRAM_NAME.end_with?("gem") && ARGV == ["build", __FILE__]
-    spec.signing_key = File.expand_path("~/.ssh/gem-private_key.pem")
-  end
-
   s.rdoc_options += [
     "--title", "gem_mirror - A Tool for Managing a Private Gem Repository",
     "--main", "README.md",
