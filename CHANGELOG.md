@@ -1,3 +1,9 @@
+## 0.1.0
+
+### Changes
+
+  - release
+
 ## 0.1.0.pre
 
 ### Changes
