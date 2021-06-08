@@ -24,6 +24,8 @@ RuboCop::RakeTask.new do |task|
   task.requires << "rubocop-performance"
 end
 
+Rake.add_rakelib "tasks"
+
 task default: %i[rubocop yard]
 
 # Include the "pkg" and "doc" directories and their contents.
